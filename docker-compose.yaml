@@ -1,8 +1,10 @@
 services:
   linux:
+    platform: linux/x86_64
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - .:/9cc
+    working_dir: /9cc
     tty: true
