@@ -1,0 +1,8 @@
+services:
+  linux:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/9cc
+    tty: true
